@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B5902DEB1FD3E81700EBB501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5902DEA1FD3E81700EBB501 /* AppDelegate.swift */; };
-		B5902DED1FD3E81700EBB501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5902DEC1FD3E81700EBB501 /* ViewController.swift */; };
+		B5902DED1FD3E81700EBB501 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5902DEC1FD3E81700EBB501 /* WelcomeViewController.swift */; };
 		B5902DF01FD3E81700EBB501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5902DEE1FD3E81700EBB501 /* Main.storyboard */; };
 		B5902DF21FD3E81700EBB501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5902DF11FD3E81700EBB501 /* Assets.xcassets */; };
 		B5902DF51FD3E81700EBB501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5902DF31FD3E81700EBB501 /* LaunchScreen.storyboard */; };
+		B5902DFE1FD3F93000EBB501 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5902DFC1FD3F93000EBB501 /* ItemCell.swift */; };
+		B5902DFF1FD3F93000EBB501 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5902DFD1FD3F93000EBB501 /* ItemCell.xib */; };
+		B5902E011FD50CC200EBB501 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5902E001FD50CC100EBB501 /* GoogleService-Info.plist */; };
+		B5902E031FD5107700EBB501 /* MartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5902E021FD5107700EBB501 /* MartViewController.swift */; };
 		DD7151D242EAEE7589000857 /* Pods_Luu_Mart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7724EA2358C5E5823A497707 /* Pods_Luu_Mart.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +25,15 @@
 		AE4FBCCF3BD3606B3653ADFE /* Pods-Luu Mart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luu Mart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Luu Mart/Pods-Luu Mart.debug.xcconfig"; sourceTree = "<group>"; };
 		B5902DE71FD3E81700EBB501 /* Luu Mart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luu Mart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5902DEA1FD3E81700EBB501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5902DEC1FD3E81700EBB501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5902DEC1FD3E81700EBB501 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B5902DEF1FD3E81700EBB501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5902DF11FD3E81700EBB501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5902DF41FD3E81700EBB501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5902DF61FD3E81700EBB501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5902DFC1FD3F93000EBB501 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		B5902DFD1FD3F93000EBB501 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		B5902E001FD50CC100EBB501 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5902E021FD5107700EBB501 /* MartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +87,15 @@
 			isa = PBXGroup;
 			children = (
 				B5902DEA1FD3E81700EBB501 /* AppDelegate.swift */,
-				B5902DEC1FD3E81700EBB501 /* ViewController.swift */,
+				B5902DEC1FD3E81700EBB501 /* WelcomeViewController.swift */,
 				B5902DEE1FD3E81700EBB501 /* Main.storyboard */,
+				B5902DFC1FD3F93000EBB501 /* ItemCell.swift */,
+				B5902DFD1FD3F93000EBB501 /* ItemCell.xib */,
 				B5902DF11FD3E81700EBB501 /* Assets.xcassets */,
 				B5902DF31FD3E81700EBB501 /* LaunchScreen.storyboard */,
+				B5902E001FD50CC100EBB501 /* GoogleService-Info.plist */,
 				B5902DF61FD3E81700EBB501 /* Info.plist */,
+				B5902E021FD5107700EBB501 /* MartViewController.swift */,
 			);
 			path = "Luu Mart";
 			sourceTree = "<group>";
@@ -150,7 +162,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5902DFF1FD3F93000EBB501 /* ItemCell.xib in Resources */,
 				B5902DF51FD3E81700EBB501 /* LaunchScreen.storyboard in Resources */,
+				B5902E011FD50CC200EBB501 /* GoogleService-Info.plist in Resources */,
 				B5902DF21FD3E81700EBB501 /* Assets.xcassets in Resources */,
 				B5902DF01FD3E81700EBB501 /* Main.storyboard in Resources */,
 			);
@@ -227,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5902DED1FD3E81700EBB501 /* ViewController.swift in Sources */,
+				B5902DED1FD3E81700EBB501 /* WelcomeViewController.swift in Sources */,
 				B5902DEB1FD3E81700EBB501 /* AppDelegate.swift in Sources */,
+				B5902E031FD5107700EBB501 /* MartViewController.swift in Sources */,
+				B5902DFE1FD3F93000EBB501 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

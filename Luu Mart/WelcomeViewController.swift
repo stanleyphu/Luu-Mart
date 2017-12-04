@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WelcomeViewController.swift
 //  Luu Mart
 //
 //  Created by Stanley Phu on 12/3/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
