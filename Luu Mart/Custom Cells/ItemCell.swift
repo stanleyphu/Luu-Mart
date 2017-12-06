@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ItemCell: UITableViewCell {
 
@@ -26,6 +27,10 @@ class ItemCell: UITableViewCell {
     }
     
     @IBAction func addButtonPressed(_ sender: UIButton) {
+        ShoppingCart.shoppingCart.cartItems.append(Item(name: itemName.text!, price: itemPrice.text!, image: itemImageView.image!))
+        SVProgressHUD.showSuccess(withStatus: "Added!")
+        SVProgressHUD.dismiss(withDelay: 1)
+        print(ShoppingCart.shoppingCart.cartItems.count)
     }
     
 }

@@ -8,8 +8,13 @@ target 'Luu Mart' do
     pod 'Firebase'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
+    pod 'Firebase/Core'
+    pod 'Firebase/Storage'
     pod 'SVProgressHUD'
     pod 'ChameleonFramework'
+    pod 'Braintree'
+    pod 'BraintreeDropIn'
+    pod 'Braintree/Venmo'
 
 end
 
