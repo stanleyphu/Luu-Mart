@@ -39,7 +39,6 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         configureTableView()
         cartTableView.reloadData()
         
-        showDropIn(clientTokenOrTokenizationKey: "sandbox_p8fd8ndh_8t99xbx476vx2yh4")
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,13 +71,17 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         cartTableView.rowHeight = UITableViewAutomaticDimension
         cartTableView.estimatedRowHeight = 120.0
         
-        cartTableView.separatorStyle = .none
+        //cartTableView.separatorStyle = .none
         cartTableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         ShoppingCart.shoppingCart.cartItems.remove(at: indexPath.row)
         cartTableView.reloadData()
+    }
+    
+    @IBAction func purchaseButtonClicked(_ sender: UIButton) {
+        showDropIn(clientTokenOrTokenizationKey: "sandbox_p8fd8ndh_8t99xbx476vx2yh4")
     }
     
     func showDropIn(clientTokenOrTokenizationKey: String) {
@@ -91,6 +94,14 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print("CANCELLED")
             } else if let result = result {
                 print(result)
+                print(result.paymentMethod)
+                print(result.paymentDescription)
+                print(result.paymentOptionType)
+                
+                SVProgressHUD.showSuccess(withStatus: "Purchased!")
+                SVProgressHUD.dismiss(withDelay: 1)
+                self.clearCart()
+                
                 // Use the BTDropInResult properties to update your UI
                 // result.paymentOptionType
                 // result.paymentMethod
@@ -100,6 +111,11 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
             controller.dismiss(animated: true, completion: nil)
         }
         self.present(dropIn!, animated: true, completion: nil)
+    }
+    
+    func clearCart() {
+        ShoppingCart.shoppingCart.cartItems = []
+        cartTableView.reloadData()
     }
     
     /*

@@ -8,10 +8,12 @@
 
 import UIKit
 import Firebase
+import Vision
 
-class MartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var itemsArray : [Item] = [Item]()
+    let imagePicker = UIImagePickerController()
     
     @IBOutlet weak var itemTableView: UITableView!
     
@@ -26,6 +28,39 @@ class MartViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         configureTableView()
         retrieveItems()
+        
+        // Try uploading image
+//        imagePicker.delegate = self
+//        imagePicker.sourceType = .photoLibrary
+//        imagePicker.allowsEditing = false
+//
+//        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+//        let selectedPhoto = info[UIImagePickerControllerOriginalImage]
+//        dismiss(animated: true, completion: nil)
+//
+//        var data = Data()
+//        data = UIImageJPEGRepresentation(selectedPhoto as! UIImage, 0.8)!
+//        // set upload path
+//        let filePath = "images/\("userPhoto").jpg"
+//        let metaData = StorageMetadata()
+//        metaData.contentType = "image/jpg"
+//        let imageRef = Storage.storage().reference().child(filePath)
+//        imageRef.putData(data, metadata: metaData) { (metaData, error) in
+//            if let error = error {
+//                print(error.localizedDescription)
+//                return
+//            } else {
+//                //store downloadURL
+//                let downloadURL = metaData!.downloadURL()!.absoluteString
+//                print(downloadURL)
+//                //store downloadURL at database
+//                //self.databaseRef.child("users").child(FIRAuth.auth()!.currentUser!.uid).updateChildValues(["userPhoto": downloadURL])
+//            }
+//
+//        }
     }
 
     override func didReceiveMemoryWarning() {

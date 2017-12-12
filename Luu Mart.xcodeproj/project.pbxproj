@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50893801FDD47FF005EF09D /* AdminItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B508937E1FDD47FF005EF09D /* AdminItemCell.swift */; };
+		B50893811FDD47FF005EF09D /* AdminItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B508937F1FDD47FF005EF09D /* AdminItemCell.xib */; };
+		B50893831FDD4BBC005EF09D /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50893821FDD4BBC005EF09D /* AdminViewController.swift */; };
+		B51230D51FDE5C7E00956833 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51230D41FDE5C7E00956833 /* AddItemViewController.swift */; };
+		B51230D71FDE68D700956833 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51230D61FDE68D700956833 /* LoginViewController.swift */; };
 		B52C0A3B1FD54A8E005371F2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52C0A3A1FD54A8E005371F2 /* Item.swift */; };
 		B52C0A401FD55B43005371F2 /* MartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52C0A3F1FD55B43005371F2 /* MartViewController.swift */; };
 		B52C0A421FD56380005371F2 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52C0A411FD56380005371F2 /* ShoppingCart.swift */; };
@@ -28,6 +33,11 @@
 		1C621BC59B47B623FB909AA4 /* Pods-Luu Mart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luu Mart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Luu Mart/Pods-Luu Mart.release.xcconfig"; sourceTree = "<group>"; };
 		7724EA2358C5E5823A497707 /* Pods_Luu_Mart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Luu_Mart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4FBCCF3BD3606B3653ADFE /* Pods-Luu Mart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luu Mart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Luu Mart/Pods-Luu Mart.debug.xcconfig"; sourceTree = "<group>"; };
+		B508937E1FDD47FF005EF09D /* AdminItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminItemCell.swift; sourceTree = "<group>"; };
+		B508937F1FDD47FF005EF09D /* AdminItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminItemCell.xib; sourceTree = "<group>"; };
+		B50893821FDD4BBC005EF09D /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		B51230D41FDE5C7E00956833 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		B51230D61FDE68D700956833 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B52C0A3A1FD54A8E005371F2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B52C0A3F1FD55B43005371F2 /* MartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartViewController.swift; sourceTree = "<group>"; };
 		B52C0A411FD56380005371F2 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
@@ -82,6 +92,8 @@
 				B5902DFD1FD3F93000EBB501 /* ItemCell.xib */,
 				B52C0A431FD64C37005371F2 /* CartItemCell.swift */,
 				B52C0A441FD64C37005371F2 /* CartItemCell.xib */,
+				B508937E1FDD47FF005EF09D /* AdminItemCell.swift */,
+				B508937F1FDD47FF005EF09D /* AdminItemCell.xib */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -131,6 +143,9 @@
 				B5902DEC1FD3E81700EBB501 /* WelcomeViewController.swift */,
 				B52C0A3F1FD55B43005371F2 /* MartViewController.swift */,
 				B5902DEE1FD3E81700EBB501 /* Main.storyboard */,
+				B51230D61FDE68D700956833 /* LoginViewController.swift */,
+				B51230D41FDE5C7E00956833 /* AddItemViewController.swift */,
+				B50893821FDD4BBC005EF09D /* AdminViewController.swift */,
 				B52C0A491FD67A8E005371F2 /* CartViewController.swift */,
 				B5902DF11FD3E81700EBB501 /* Assets.xcassets */,
 				B5902DF31FD3E81700EBB501 /* LaunchScreen.storyboard */,
@@ -203,6 +218,7 @@
 			files = (
 				B5902DFF1FD3F93000EBB501 /* ItemCell.xib in Resources */,
 				B5902DF51FD3E81700EBB501 /* LaunchScreen.storyboard in Resources */,
+				B50893811FDD47FF005EF09D /* AdminItemCell.xib in Resources */,
 				B5902E011FD50CC200EBB501 /* GoogleService-Info.plist in Resources */,
 				B5902DF21FD3E81700EBB501 /* Assets.xcassets in Resources */,
 				B52C0A461FD64C37005371F2 /* CartItemCell.xib in Resources */,
@@ -285,14 +301,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51230D71FDE68D700956833 /* LoginViewController.swift in Sources */,
 				B52C0A3B1FD54A8E005371F2 /* Item.swift in Sources */,
 				B52C0A421FD56380005371F2 /* ShoppingCart.swift in Sources */,
 				B5902DED1FD3E81700EBB501 /* WelcomeViewController.swift in Sources */,
+				B50893801FDD47FF005EF09D /* AdminItemCell.swift in Sources */,
 				B5902DEB1FD3E81700EBB501 /* AppDelegate.swift in Sources */,
 				B52C0A4A1FD67A8E005371F2 /* CartViewController.swift in Sources */,
 				B52C0A451FD64C37005371F2 /* CartItemCell.swift in Sources */,
 				B52C0A401FD55B43005371F2 /* MartViewController.swift in Sources */,
+				B50893831FDD4BBC005EF09D /* AdminViewController.swift in Sources */,
 				B5902DFE1FD3F93000EBB501 /* ItemCell.swift in Sources */,
+				B51230D51FDE5C7E00956833 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FM8KX34TCE;
 				INFOPLIST_FILE = "$(SRCROOT)/Luu Mart/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stanleyphu.LuuMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -449,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FM8KX34TCE;
 				INFOPLIST_FILE = "$(SRCROOT)/Luu Mart/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stanleyphu.LuuMart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
